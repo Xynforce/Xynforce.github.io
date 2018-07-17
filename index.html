@@ -83,6 +83,7 @@ body, html {
   color: #fff;
   padding: 18px;
   font-size: 25px;
+  font: 400 18px/1.8 "Lato", Montserrat, sans-serif;
   letter-spacing: 10px;
 }
 
@@ -153,8 +154,8 @@ $(document).ready(function(){
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
+        scrollTop: $(hash).offset().top  //Capability to change target
+      }, 1000, function(){
    
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
@@ -193,12 +194,12 @@ $(document).ready(function(){
 
 
 
-	<div style="color: #ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify; ">
+	<div style="color: #ddd;background-color:#282E34;text-align:center;padding:80px 300px;text-align: justify;">
 	  <a id = "bio">
-	  <h3 style="text-align:center;">Biography</h3>
+	  <h3 style="text-align:center;font-size: 30px;">Biography</h3>
 	  </a>
-	  <p>Hello hello~! My name is Xiaolei Zhang, though I commonly go by my preferred name - Brian.
-	  Game development is my life, though I am interested in a wide variety of subjects, including
+	  <p style="line-height:40px; font-size: 20px;">Hello hello~! My name is Xiaolei Zhang, though I commonly go by my preferred name - Brian.
+	  I am a passionate Canadian student currently going to both the AP and Co-Op program in grade 12. Game development is my life, though I am interested in a wide variety of subjects, including
 	  music, biology, graphic design, and digital art. At school, I am the president of the TED-Ed Club and
 	  the vice president of the computer science club. I help host two bi-annual TEDx Events at my schools involving
 	  many diverse student speakers, as well as an annual STEAM Event to encourage youth passion in science and technology. 
@@ -213,33 +214,89 @@ $(document).ready(function(){
 	
 	<div class="bgimg-2">
 	  <div class="caption">
-		<span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">You are the universe, expressing itself as human, for a little while - Eckhart Tolle</span>
+		<p style="background-color:transparent;padding:10px 200px;text-align:center;font-size:25px;color: #f7f7f7;">You are the universe, expressing itself as human, for a little while - Eckhart Tolle</p>
 	  </div>
 	</div>
 
 	
 	<div style="position:relative;">
-	  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+	  <div style="color:#ddd;background-color:#282E34;padding:50px 80px;text-align: justify;">
 		
-		<p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+		<a id = "portfolio">
+		<h3 style="text-align:center;font-size: 30px;">Accomplishments - Academia</h3>
+		</a>
+		
+		<p style="line-height:40px; font-size: 20px;padding:0px 100px;text-align:left;">> Took AP Biology, AP Advanced Functions, and AP Calculus one year earlier than their designated grade<br/> 
+		> Self-taught AP Microeconomics, AP Psychology, and AP Environmental Science<br/> 
+		> President of TED-Ed Club, Vice President of Computer Science Club <br/>
+		> Member of Music Council, DECA, Swim Team, Silver, Concert, and Jazz Bands <br/>
+		> Honour roll with ~95% average in grades 10 & 11
+		
+		</p>
 		
 	 </div>
 	</div>
 	
+	<div class="bgimg-2">
+	  <div class="caption">
+		<p style="background-color:transparent;padding:10px 200px;text-align:center;font-size:25px;color: #f7f7f7;">I feel within me a peace above all earthly dignities, a still and quiet conscience. - William Shakespeare </p>
+</p>
+	  </div>
+	</div>
+	
+	<div style="position:relative;">
+	  <div style="color:#ddd;background-color:#282E34;padding:50px 80px;text-align: justify;">
+		<h3 style="text-align:center;font-size: 30px;">Accomplishments - Community</h3>
+		
+		<p style="line-height:40px; font-size: 20px;padding:0px 100px;text-align:left;">> SHAD Valley Fellow<br/> 
+		> STEAM Program Ambassador<br/> 
+		> Mackenzie Health Hospital - Volunteer<br/>
+		> York Regional Police - Youth Band <br/>
+		> Community Center Events - Volunteer <br/>
+		
+		</p>
+		
+	 </div>
+	</div>
+	
+	<div class="bgimg-2">
+	  <div class="caption">
+		<p style="background-color:transparent;padding:10px 200px;text-align:center;font-size:25px;color: #f7f7f7;">The pain I feel now is the happiness I had before. That's the deal. - C.S. Lewis</p>
+	  </div>
+	</div>
+	
+	<div style="position:relative;">
+	  <div style="color:#ddd;background-color:#282E34;padding:50px 80px;text-align: justify;">
+		<h3 style="text-align:center;font-size: 30px;">Accomplishments - Projects</h3>
+		
+		<p style="line-height:40px; font-size: 20px;padding:0px 100px;text-align:left;">
+		> Ludum Dare 38 - Made simple text-based RPG in 24 hours <br/>
+		> Gamemaker Studio 2 - Made simple top-down RPG <br/>
+		> Aseprite - Drew graphic assets and aesthetic elements for games, websites, and programs as needed<br/>
+		> AP Biology - Conducted biological study on effects of temperature on photosynthetic capabilities of Taraxacum officinale <br/>
+		> Canadian Light Source - Conducted biological study on acrylamide presence in Solanum tuberosum and Clupea harengus of varying degrees of burn<br/>
+		> Saskatchewan Structural Sciences Center - Conducted organic chemistry study on functional group activity in foods of varying degrees of burn using Raman (Clupea harengus) and FTIR (Solanum tuberosum) Spectroscopy<br/>
+		</p>
+		
+	 </div>
+	</div>
 	
 	<div class="bgimg-3">
 	  <div class="caption">
-		<span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+		<span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">References available upon request</span>
 	  </div>
 	</div>
 
 	<div style="position:relative;">
 
 	  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:150px 80px;text-align: justify;">
-		<h3 style="text-align:center;">Contact Info</h3>
-		<a id = "portfolio">
-		<p style = "text-align:center;">(647) 918-1278 <br/> brianzhang25@gmail.com <br/> Towaraito.com</p>
+		
+		<a id = "contactme">
+		<h3 style="text-align:center; font-size: 30px;">Contact Info</h3>
 		</a>
+		
+		<p style = "text-align:center; font-size: 20px; line-height: 50px;">(647) 918-1278 <br/> brianzhang25@gmail.com <br/> xynforce.github.io</p>
+		
 	 </div>
 	</div>
 
@@ -250,17 +307,17 @@ $(document).ready(function(){
 	</div>
 
 <div class="navbar">
-	<h3 style = "font-size: 34px; color: #ffffff; letter-spacing: 5px; down: 30px;">&nbsp;&nbsp;   XIAOLEI ZHANG</>
+	<h3 style = "font-size: 40px; color: #ffffff; letter-spacing: 5px; down: 30px;">&nbsp;&nbsp;   XIAOLEI ZHANG</>
   <a href="#home">Home</a>
   <a href="#bio">Bio</a>
   <a href="#portfolio">Portfolio</a>
+  <a href="#contactme">Contact Me</a>
 </div>
 	
 	<script>
-	// When the user scrolls the page, execute myFunction 
-	window.onscroll = function() {myFunction()};
+	window.onscroll = function() {healthBar()};
 
-	function myFunction() {
+	function healthBar() {
 	  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
 	  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 	  var scrolled = (winScroll / height) * 100;
